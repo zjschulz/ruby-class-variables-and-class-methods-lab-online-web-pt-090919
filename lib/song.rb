@@ -38,14 +38,4 @@ class Song
     hash
   end
 
-  def self.artist_count
-     hahs = {}
-    @@artists.each {|x|
-      if hahs[x]
-        hahs[x] = hahs[x] + 1
-      else
-        hahs[x] = 1 
-      end
-    }
-    hahs
-  end
+  
