@@ -30,9 +30,12 @@ class Song
     hash = {}
     i = 1
     @@genres.each {|genre| hash[genre] << i
-      if hash[genre] == true 
+      if hash[genre]
+        i += 1
         hash[genre] << i 
-        
+      else
+        hash[genre] << 1 
+      end  
     }
     hash
   end
