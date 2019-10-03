@@ -42,9 +42,9 @@ class Song
      hash = {}
     @@artists.each {|x|
       if hash[x]
-        hash[genre] = hash[genre] + 1
+        hash[x] = hash[x] + 1
       else
-        hash[genre] = 1 
+        hash[x] = 1 
       end
     }
     hash
