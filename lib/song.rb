@@ -39,13 +39,13 @@ class Song
   end
 
   def self.artist_count
-     hash = {}
+     hahs = {}
     @@artists.each {|x|
-      if hash[x]
-        hash[x] = hash[x] + 1
+      if hahs[x]
+        hahs[x] = hahs[x] + 1
       else
-        hash[x] = 1 
+        hahs[x] = 1 
       end
     }
-    hash
+    hahs
   end
